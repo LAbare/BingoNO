@@ -1,0 +1,108 @@
+html, body {
+	margin: 0;
+	padding: 10px 40px;
+	background-color: #FFC;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+.centerdiv {
+	margin: auto;
+	text-align: center;
+}
+
+.loginline {
+	margin-bottom: 5px;
+}
+
+.loginline input {
+	margin-left: 10px;
+}
+
+button, input[type="submit"], div[onclick="wrongLever();"] {
+	display: inline;
+	padding: 4px;
+	border: 2px #26C solid;
+	background-color: #48E;
+	cursor: pointer;
+	font-size: 0.9em;
+	font-family: serif;
+	color: black;
+}
+
+button:hover, input[type="submit"]:hover, div[onclick="wrongLever();"]:hover {
+	background-color: #6AF;
+}
+
+#wrongLever {
+	margin: 10px auto;
+	text-align: center;
+	display: none;
+}
+
+.gratin {
+	display: block;
+	margin: 10px auto;
+}
+
+.admingroup {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.admingroup:not(:last-of-type) {
+	border-bottom: 2px #AAA solid;
+	padding-bottom: 20px;
+}
+
+.cellline {
+	display: inline-block;
+	padding: 5px;
+	border: 2px black solid;
+	background-color: #EC6;
+}
+
+.cellline:not(:first-of-type) {
+	border-top: none;
+}
+
+.cellline input[type='text'] {
+	width: 20em;
+}
+
+.addcell {
+	background-color: #BFB;
+}
+
+#celltest {
+	display: table-cell;
+	margin: 10px auto;
+	width: 100px;
+	height: 100px;
+	font-size: 0.9em;
+	text-align: center;
+	border: 2px black solid;
+	background-color: #26C;
+	vertical-align: middle;
+	position: relative;
+	top: 10px;
+	left: 40vw;
+}
+
+textarea {
+	display: block;
+	min-width: 250px;
+	width: 60%;
+	height: 250px;
+	margin: 0 auto 10px auto;
+}
+
+.chevals {
+	text-align: center;
+}

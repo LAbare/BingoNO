@@ -1,0 +1,8 @@
+DirectoryIndex index.py
+Options -Indexes
+
+RewriteEngine on
+Options +FollowSymlinks
+RewriteRule ^([^\./]+)$ getGrid.py?name=$1
+#Suffit de s'assurer que tous les noms de fichier ont un point, et les dossiers auront /
+RewriteRule ^([^\./]+)\.png$ getImage.py?name=$1 [NE]

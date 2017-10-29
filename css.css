@@ -1,0 +1,58 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFC;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+.bingo {
+	margin: auto;
+	border-collapse: collapse;
+}
+
+.bingo td {
+	width: 100px;
+	height: 100px;
+	font-size: 0.9em;
+	text-align: center;
+	border: 2px black solid;
+	background-color: white;
+}
+
+.bingo a, .bingo a:hover, .bingo a:visited, .bingo a:active, .bingo a:focus {
+	color: black;
+	text-shadow: -1px 0 #FFF, 0 1px #FFF, 1px 0 #FFF, 0 -1px #FFF;
+}
+
+.bingo td:hover:not(.happened) {
+    background-color: #CCF;
+}
+
+.bingo .happened {
+	background-color: #26C;
+	background-image: url('img/kitten.png');
+}
+
+.bingo .happened:hover {
+	background-color: #48E;
+}
+
+#bingoinfo {
+	display: none;
+}
+
+.bingo .isbingo {
+	background-color: #2C6;
+	background-image: url('img/kitten_bingo.png');
+}
+
+.bingo .isbingo:hover {
+	background-color: #4E8;
+}
