@@ -117,7 +117,7 @@ cursor.execute("SELECT * FROM bingoNO_cells WHERE Validated = 1")
 all_cells = cursor.fetchall()
 to_page("<div class='admingroup'>")
 to_page("<h2>Cases du bingo ({})</h2>".format(len(all_cells)))
-to_page("<p>Note : possibilité que les gens proposent des cases, ce serait facile à implémenter<br />La checkbox 'Coché' sert juste à avoir des cases précochées si quelqu'un se crée une grille en cours de nuit, c'est pas un cochage général. Je sais pas si c'est utile, mais au m.</p>")
+to_page("<p>Note : possibilité que les gens proposent des cases, ce serait facile à implémenter<br />La checkbox 'Coché' sert juste à avoir des cases précochées si quelqu'un se crée une grille en cours de nuit, c'est pas un cochage général. Je sais pas si c'est utile, mais au moins c'est codé.</p>")
 for cell in all_cells:
 	checked = ''
 	if cell[2]:

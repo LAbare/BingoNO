@@ -38,6 +38,7 @@ p {
 .bingo .happened {
 	background-color: #26C;
 	background-image: url('img/kitten.png');
+	background-repeat: no-repeat;
 }
 
 .bingo .happened:hover {
@@ -51,6 +52,7 @@ p {
 .bingo .isbingo {
 	background-color: #2C6;
 	background-image: url('img/kitten_bingo.png');
+	background-repeat: no-repeat;
 }
 
 .bingo .isbingo:hover {

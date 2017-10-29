@@ -19,7 +19,7 @@ class UserInfo:
 		self.infos = None
 		try:
 			self.cookie = Cookie.SimpleCookie(os.environ["HTTP_COOKIE"])
-		except Cookie.CookieError:
+		except: # Cookie.CookieError ou KeyError
 			self.cookie = Cookie.SimpleCookie()
 		if b"BingoNO_SID" in self.cookie and self.cookie[b"BingoNO_SID"].value != '':
 			self.sid = self.cookie[b"BingoNO_SID"].value

@@ -63,13 +63,14 @@ function highlightBingos(bingos) {
 }
 
 
-var cell_links = document.querySelectorAll('td a');
+var cell_links = document.querySelectorAll('.bingo td a');
 for (var i = 0; i < cell_links.length; i++) {
 	cell_links[i].style.textDecoration = 'none';
 	cell_links[i].setAttribute('onclick', 'return false;');
-	cell_links[i].addEventListener('click', function() {
-		var link = this;
-		var cell = link.parentNode;
+	cell_links[i].parentNode.style.cursor = 'pointer';
+	cell_links[i].parentNode.addEventListener('click', function() {
+		var cell = this;
+		var link = cell.firstElementChild;
 		var href = link.getAttribute('href');
 		var set = href.match(/set=(0|1)/);
 		if (set) {
